@@ -1,0 +1,26 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: #f4f7fb; color: #111; }
+#root { min-height: 100vh; padding: 24px; }
+.todo-card { background: #fff; border-radius: 12px; max-width: 620px; width: 100%; margin: 0 auto; box-shadow: 0 4px 20px rgba(50, 50, 93, 0.08); padding: 24px; }
+.todo-card h1 { margin-top: 0; font-size: 1.8rem; margin-bottom: 14px; }
+.todo-input-wrap { display: flex; gap: 10px; margin-bottom: 16px; }
+.todo-input-wrap input { flex: 1; font-size: 1rem; padding: 10px 12px; border: 1px solid #d6d9e6; border-radius: 8px; }
+.todo-input-wrap button { border: none; background: #0066ff; color: white; border-radius: 8px; padding: 10px 14px; font-weight: 600; cursor: pointer; }
+.todo-input-wrap button:hover { background: #0051cc; }
+.filter-buttons { display: flex; gap: 8px; margin-bottom: 16px; }
+.filter-buttons button { border: none; background: #f1f3f7; color: #5f6f8b; border-radius: 8px; padding: 8px 12px; cursor: pointer; font-size: 0.9rem; }
+.filter-buttons button.active { background: #0066ff; color: white; }
+.filter-buttons button:hover { background: #e0e4ea; }
+.filter-buttons button.active:hover { background: #0051cc; }
+.count { background: #e0e4ea; border-radius: 10px; padding: 2px 6px; font-size: 0.8rem; margin-left: 4px; }
+.filter-buttons button.active .count { background: rgba(255,255,255,0.2); color: white; }
+.todo-list { list-style: none; margin: 0; padding: 0; }
+.todo-item { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #f1f3f7; }
+.todo-item:last-child { border-bottom: none; }
+.task-toggle { cursor: pointer; user-select: none; font-size: 1rem; }
+.task-text { flex: 1; font-size: 1rem; }
+.todo-item.completed .task-text { text-decoration: line-through; color: #7a849d; }
+.delete-btn { border: none; color: white; background: #e63946; border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+.delete-btn:hover { background: #c72b3e; }
+.empty { padding: 10px; color: #5f6f8b; }
+
